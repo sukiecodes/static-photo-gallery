@@ -37,8 +37,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun PhotoGallery(modifier: Modifier = Modifier) {
-    val imageSize = modifier.size(100.dp)
+    val imageSize = modifier.size(100.dp) // used to standardize image size
     Column {
+        // column of rows of two images each
         Row(modifier = Modifier.fillMaxWidth()) {
             Image(
                 painter = painterResource(R.drawable.calcifer),
