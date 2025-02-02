@@ -40,11 +40,17 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PhotoGallery(modifier: Modifier = Modifier) {
     val imageSize = modifier.size(100.dp) // used to standardize image size
-    Column {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(80.dp)
+    ) {
         // column of rows of two images each
         Row(modifier = Modifier.fillMaxWidth()) {
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.calcifer),
@@ -55,7 +61,9 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
             }
 
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.jiji),
@@ -68,7 +76,9 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
 
         Row(modifier = Modifier.fillMaxWidth()) {
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.kiki),
@@ -79,7 +89,9 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
             }
 
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.ponyo),
@@ -92,7 +104,9 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
 
         Row(modifier = Modifier.fillMaxWidth()) {
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.radish),
@@ -103,7 +117,9 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
             }
 
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = modifier
+                    .padding(5.dp)
             ) {
                 Image(
                     painter = painterResource(R.drawable.totoro),
