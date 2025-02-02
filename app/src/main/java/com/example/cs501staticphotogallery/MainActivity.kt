@@ -12,7 +12,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -41,45 +43,75 @@ fun PhotoGallery(modifier: Modifier = Modifier) {
     Column {
         // column of rows of two images each
         Row(modifier = Modifier.fillMaxWidth()) {
-            Image(
-                painter = painterResource(R.drawable.calcifer),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.calcifer),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Calcifer")
+            }
 
-            Image(
-                painter = painterResource(R.drawable.jiji),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.jiji),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Jiji")
+            }
         }
 
         Row(modifier = Modifier.fillMaxWidth()) {
-            Image(
-                painter = painterResource(R.drawable.kiki),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.kiki),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Kiki")
+            }
 
-            Image(
-                painter = painterResource(R.drawable.ponyo),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.ponyo),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Ponyo")
+            }
         }
 
         Row(modifier = Modifier.fillMaxWidth()) {
-            Image(
-                painter = painterResource(R.drawable.radish),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.radish),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Radish Spirit")
+            }
 
-            Image(
-                painter = painterResource(R.drawable.totoro),
-                contentDescription = null,
-                modifier = imageSize
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.totoro),
+                    contentDescription = null,
+                    modifier = imageSize
+                )
+                Text(text = "Totoro")
+            }
         }
 
     }
